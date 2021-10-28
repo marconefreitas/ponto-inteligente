@@ -28,6 +28,7 @@ import { LancamentoService } from '../shared/services/lancamento.service';
 import { HttpUtilService } from '../shared/services/http-util.service';
 import { TradutorLabel } from '../shared/tradutor-label';
 import { FuncionarioService } from '../shared/services/funcionario.service';
+import { AdminGuardService } from './services/admin-guard.service';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { FuncionarioService } from '../shared/services/funcionario.service';
     HttpUtilService,
     MatPaginatorIntl,
     FuncionarioService,
+    AdminGuardService,
     {provide: MAT_DATE_LOCALE, useValue: 'pt-BR'},
     {provide: MatPaginatorIntl, useClass: TradutorLabel}
 
